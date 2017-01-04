@@ -20,7 +20,7 @@ const (
 var dataStore *DataStore
 
 func init() {
-	session, err := mgo.Dial("127.0.0.1:12345")
+	session, err := mgo.Dial("127.0.0.1:27017")
 	if err != nil {
 		log.Fatal(err)
 	}

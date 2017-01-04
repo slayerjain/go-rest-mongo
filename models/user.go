@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"errors"
 
-	"github.com/jakecoffman/go-rest-mongo/datastore"
-	"github.com/jakecoffman/go-rest-mongo/framework"
+	"github.com/slayerjain/go-rest-mongo/datastore"
+	"github.com/slayerjain/go-rest-mongo/framework"
 	"gopkg.in/mgo.v2/bson"
 )
 

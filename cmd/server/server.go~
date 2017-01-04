@@ -4,9 +4,9 @@ import (
 	"log"
 
 	"github.com/gin-gonic/gin"
-	"github.com/slayerjain/go-rest-mongo/datastore"
-	"github.com/slayerjain/go-rest-mongo/framework"
-	"github.com/slayerjain/go-rest-mongo/models"
+	"github.com/jakecoffman/go-rest-mongo/datastore"
+	"github.com/jakecoffman/go-rest-mongo/framework"
+	"github.com/jakecoffman/go-rest-mongo/models"
 	"gopkg.in/mgo.v2/bson"
 )
 
@@ -40,16 +40,6 @@ func main() {
 	r.GET("/", func(ctx *gin.Context) {
 		ctx.JSON(200, bson.M{"hello": "world!"})
 	})
-
-	// publicUserGroup = r.Group("/") {
-	// 	repo := models.NewUserRepository()
-	// 	userResource := framework.NewGenericController(repo)
-	// 	publicUSerGroup.GET("/:id", userResource.Get)
-
-	// }
-
-	//Groups can be used to group the registered and non-registered users
-
 	userGroup := r.Group("/users")
 	{
 		repo := models.NewUserRepository()

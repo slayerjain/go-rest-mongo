@@ -1,0 +1,8 @@
+necessary steps:
+
+1. Install the standard Go installation.
+2. do 'go get #repo-url'
+3. install and run mongod on port 12345.
+4. goto cmd/server and type 'go install' 
+5. goto the Go's bin folder, and there'll be the compiled server code
+6. just do ./server (make sure the mongod server is running).
